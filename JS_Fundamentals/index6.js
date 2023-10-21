@@ -12,8 +12,8 @@ const inigo = {
         let greeting = `Hello ${person.name}, my name is ${this.firstName}. `;
         console.log(greeting + this.getCatchPhrase(person));
     },
-    getCatchPhrase(person) {
-        return 'Nice to meet you.';
+    getCatchPhrase: (person) => {
+        return person.numFingers === 6 ?  'You killed my father, prepare to die': 'Nice to meet you.'
     }
 }
     
