@@ -2,18 +2,15 @@ function Person(name, age) {
     this.name = name;
     this.age = age;
     this.human = true;
-if (this.age >= 16) {
-    return 'can drive';
+    this.canDrive = age > 16;
+    
 }
-return 'cannot drive';
-}
-let person1 = new Person('Joe', 35);
-let person2 = new Person('James', 27)
 
+let person1 = new Person('Joe', 35);
+let person2 = new Person('James', 15)
 
 console.log(person1)
 console.log(person2)
-
 
 
 
@@ -25,6 +22,7 @@ class PersonClass {
         this.name = name;
         this.age = age;
         this.human = true;
+        this.canDrive = age > 25;
     }
 
 }
