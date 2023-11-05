@@ -1,19 +1,13 @@
-const city = "los angeles";
+// Create a function that takes a string as a parameter
 
-const titleCapitalized = city
+function ucFirstLetter(string) {
+  return string
+    .toLowerCase()
     .split(" ")
-    .map((word) => {
-        return word
-            .charAt(0)
-            .toUpperCase() + word.slice(1);
+    .map(function (word) {
+      return word[0].toUpperCase() + word.substr(1);
     })
-    .join(" ")
+    .join(" ");
+}
 
-console.log(titleCapitalized);
-
-
-
-
-    
-
-
+console.log(ucFirstLetter("los angeles"));
