@@ -8,17 +8,21 @@ const salaries = [
 
 // a) Write a function sumSalaries(salaries) that calculates and returns the total of all
 // salaries;
-const sumSalaries = salaries.reduce(
-  (currentTotal, currentSalaries) => currentTotal + currentSalaries.salary,
-  0
-);
-
-console.log(sumSalaries);
+function sumSalaries(total) {
+  const totalSalaries = salaries.reduce(
+    (currentTotal, currentSalaries) => currentTotal + currentSalaries.salary,
+    0
+  );
+  return totalSalaries;
+}
+console.log(sumSalaries(salaries));
 
 // b) Write a function topEarner(salaries) that calculates and returns the name of the
 // person earning the highest salary
-const topEarner = salaries
-  .filter((salaries) => salaries.salary > 55000)
-  .map((salaries) => salaries.name);
-
-console.log(topEarner);
+function topEarner() {
+  const topSalary = salaries
+    .filter((salaries) => salaries.salary > 55000)
+    .map((salaries) => salaries.name);
+  return topSalary;
+}
+console.log(topEarner(salaries));
