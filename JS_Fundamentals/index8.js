@@ -15,9 +15,9 @@ const norfolk = {
     state: 'Virginia',
     population: 235_089,
     founded: 1682,
-    timezone: 'Eastern',
+    timezone: 'Eastern'
 }
 for (let key in norfolk) {
     console.log('key ' + key);
-    console.log('value ' + norfolk[key])
+    console.log('value ' + norfolk[key]);
 }

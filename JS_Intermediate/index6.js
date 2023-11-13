@@ -1,3 +1,8 @@
+
+// Create a function unique(duplicatesArray) which takes an array parameter that may
+// include duplicates. Your function should return an array containing only the unique values
+// from duplicatesArray.
+
 const unique = [
   "red",
   "green",

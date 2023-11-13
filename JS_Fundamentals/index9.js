@@ -6,7 +6,7 @@ console.log(moreSports)
 
 let dog1 = 'Bingo';
 let dog2 = dog1;
-dog2 = 'Scruffy'
+dog1 = 'Scruffy'
 console.log(dog2)
 let cat1 = { name: 'Fluffy', breed: 'Siberian' };
 let cat2 = cat1;

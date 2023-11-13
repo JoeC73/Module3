@@ -1,9 +1,9 @@
-// The answer is 10 because an empty string is known as zero(false) so you will just add the other numbers.
+// The answer is 10 because an empty string is known as zero(false) so you will just add the other numbers as a string (concatenate).
 
 console.log("" + 1 + 0)
 
 
-// The answer is negative 1 because of the empty quotes is known as zero and a negateive 1 + 0 will result in a -1. 
+// The answer is negative 1 because of the empty quotes is known as zero and a  -1 + 0 will result in a -1. 
 
 console.log("" - 1 + 0)
 

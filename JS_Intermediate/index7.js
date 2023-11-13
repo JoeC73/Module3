@@ -16,7 +16,6 @@ const books = [
 // console.log(titles)
 // (d) Extension getTitles
 function getTitles(authorInitial) {
-    // console.log(authorInitial)
     return books
         .filter(book => book.author[0].toLowerCase() === authorInitial.toLowerCase())
         .map(book => book.title)
@@ -25,3 +24,7 @@ console.log(getTitles('f'))
 
 
 // e) (Extension) Write a function latestBook() that uses find and forEach to get the book with the most recent publication date.
+
+//Step 1. Write a function called "latesBook()"
+//Step 2. Use find and forEach to get most recent book.
+
