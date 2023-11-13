@@ -11,13 +11,13 @@
 // console.log('0.1 + 0.2 = ' + currencyAddition)
 
 
-// function gfg_Run() {
-//     console.log('0.1 + 0.2 = ' +
-//         (parseFloat('0.1') +
-//             parseFloat('0.2')).toFixed(2));
-// }
+function gfg_Run() {
+    console.log('0.1 + 0.2 = ' +
+        (parseFloat('0.1') +
+            parseFloat('0.2')).toFixed(2));
+}
 
-// gfg_Run()
+gfg_Run()
 
 let currencyOperation = parseFloat('0.1') * parseFloat('0.2');
 console.log('0.1 * 0.2 = ' + currencyOperation)

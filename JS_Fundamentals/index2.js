@@ -28,4 +28,7 @@ console.log(lessThan1)
 
 let lessThan2 = thirty < four
 
+/*This expression came out as true but 30 is not less than 4. But when strings are compared, they are compared by the first string to see which is greater. 
+    "30" is less than "4"because the first character is less than 4. */
+
 console.log(lessThan2)
