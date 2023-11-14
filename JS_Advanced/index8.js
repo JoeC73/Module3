@@ -28,12 +28,16 @@ class DigitalClock {
 // should default to 1 second if not supplied.
 
 class Precisionclock extends DigitalClock {
-  precision() {}
+  constructor(prefix, precision = 1000) {
+    super(prefix);
+    this.precision = precision;
+  }
+  start() {
+    this.display();
+    this.timer = setInterval(() => this.display(), this.precision);
+  }
 }
-
-const precise = new Precisionclock("my clock:");
-precise.start();
-precise.precision();
+const preciseClock = new PrecisionClock("my precise clock:", 250);
 
 // b) Create a new class AlarmClock that inherits from DigitalClock and adds the
 // parameter wakeupTime in the format hh:mm. When the clock reaches this time, it
